@@ -113,6 +113,7 @@ set virtualedit=block
 set number
 set relativenumber
 set lazyredraw
+set statusline=%F%m%r%h%W\ [%{&ff}][%Y][%{&fenc}][%04l,%04v,%p%%\ %L]
 set laststatus=2
 set cmdheight=2
 set linespace=0
@@ -148,6 +149,8 @@ if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
   runtime! macros/matchit.vim
 endif
 
+" C-U and C-W insert mode with undo
 inoremap <C-U> <C-G>u<C-U>
+inoremap <C-W> <C-G>u<C-W>
 
 " vim:set ft=vim et sw=2:
