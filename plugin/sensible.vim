@@ -18,6 +18,7 @@ endif
 
 " Use :help 'option' to see the documentation for the given option.
 
+set hidden
 set autoindent
 set smartindent
 set cindent
